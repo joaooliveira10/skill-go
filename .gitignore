@@ -1,0 +1,43 @@
+# .gitignore - macOS + Go (apenas o que normalmente deve ser ignorado)
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.localized
+
+# Go: binários e artefatos de build/test
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.cover
+*.cov
+
+# Pastas de build/distribuição (se usadas)
+build/
+dist/
+bin/
+
+# Dependências vendorizadas (remova esta linha se você quer commitar vendor/)
+vendor/
+
+# Arquivos de IDE/editor
+.vscode/
+.idea/
+*.iml
+
+# Arquivos de ambiente / segredos
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
